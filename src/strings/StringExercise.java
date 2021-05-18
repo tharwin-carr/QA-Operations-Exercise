@@ -39,21 +39,18 @@ public class StringExercise {
 
 		// print out string in vertical fashion
 		
-		int i,j;
+		String words = "";
 		
-		
-		for(i = 0; i <= str.length() - 1; i++) {
-			if(str.substring(i).startsWith(" ") || i == 0) {
-				for(j = i + 1; j <= str.length() - 1; j++) {
-					if(str.substring(j).startsWith(" ") || j == str.length() -1)
-					System.out.println(str.substring(i,j));
-					i = j;
-				}
-				
+		for(int x = 0; x <str.length(); x++) {
+			if(str.substring(x, x+1).equals("\s")) {
+				words += "\n";				
+			} else {
+				words += str.substring(x, x+1);
 			}
-
 		}
-
+		
+		System.out.println(words);
 	}
+		
 
 }
