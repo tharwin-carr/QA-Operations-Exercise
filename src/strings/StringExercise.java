@@ -22,14 +22,13 @@ public class StringExercise {
 
 		int count = 0;
 
-
-			for (int i = 0; i < str.length(); i++) {
-				if (str.charAt(i) == ' ') {
-					count++;
-				}
+		for (int i = 0; i < str.length(); i++) {
+			if (str.charAt(i) == ' ') {
+				count++;
 			}
+		}
 
-			count = count + 1;
+		count = count + 1;
 
 		return count;
 
@@ -38,19 +37,18 @@ public class StringExercise {
 	public static void verticalString(String str) {
 
 		// print out string in vertical fashion
-		
+
 		String words = "";
-		
-		for(int x = 0; x <str.length(); x++) {
-			if(str.substring(x, x+1).equals("\s")) {
-				words += "\n";				
+
+		for (int x = 0; x < str.length(); x++) {
+			if (str.substring(x, x + 1).equals("\s")) {
+				words += "\n";
 			} else {
-				words += str.substring(x, x+1);
+				words += str.substring(x, x + 1);
 			}
 		}
-		
+
 		System.out.println(words);
 	}
-		
 
 }
