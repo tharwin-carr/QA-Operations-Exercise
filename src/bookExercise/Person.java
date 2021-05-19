@@ -4,10 +4,9 @@ public class Person {
 
 	// Attributes
 
-	public String name;
-	public int age;
-	public String gender;
-	public boolean isBreathing;
+	private String name;
+	private int age;
+	private String gender;
 
 	// Constructors
 
@@ -18,9 +17,36 @@ public class Person {
 	}
 
 	// Methods
-	
+
 	public void read(String bookTitle, String msg) {
-		System.out.println(this.name  + msg + bookTitle);
+		System.out.println(this.name + msg + bookTitle);
 	}
 
+	// Getters
+
+	public String getName() {
+		return name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public String getgender() {
+		return gender;
+	}
+
+	// Setters
+
+	public void setName(String newName) {
+		this.name = newName;
+	}
+
+	public void setName(int newAge) {
+		this.age = newAge;
+	}
+
+	public void setGender(String newGender) {
+		this.gender = newGender;
+	}
 }
